@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abdullah Bamousa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+            transition: background 0.5s;
+        }
+        
+        /* Block styles */
+        .block {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        nav {
+            background: #e74c3c;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+        }
+        
+        button {
+            display: block;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px auto;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background: #e74c3c;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abdullah Bamousa</h1>
+        <p>15 years old | Jeddah, Saudi Arabia</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+    </nav>
+
+    <div class="container">
+        <div class="block">
+            <button onclick="changeColor()">Change Background</button>
+        </div>
+
+        <div id="about" class="block">
+            <h2>About Me</h2>
+            <p>Hello! My name is Abdullah Bamousa. I'm a 15-year-old living in Jeddah, Saudi Arabia.</p>
+            
+            <h3>Education</h3>
+            <p>I'm currently in the Mawhiba enrichment program, and I was previously in the Mawhiba prep for Tamayuz program.</p>
+            
+            <h3>Future Goals</h3>
+            <p>Inshallah, in the future I want to study industrial engineering because I like to optimize processes and make them faster and better.</p>
+        </div>
+
+        <div id="hobbies" class="block">
+            <h2>My Hobbies</h2>
+            
+            <div class="hobby-block">
+                <h3>Boxing</h3>
+                <p>I have been practicing boxing for 2 years. It's a great way to stay fit and disciplined.</p>
+            </div>
+            
+            <div class="hobby-block">
+                <h3>Jiu Jitsu</h3>
+                <p>I also enjoy Jiu Jitsu. In 2019, I won first place in a competition, which was a great achievement for me.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeColor() {
+            const colors = ['#f5f5f5', '#f0f8ff', '#fff0f5', '#f0fff0', '#f5f0ff'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.background = randomColor;
+        }
+    </script>
+</body>
+</html>
